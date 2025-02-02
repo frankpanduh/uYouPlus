@@ -44,7 +44,7 @@ concurrency:
 jobs:
   build:
     name: Build uYouPlus
-    runs-on: macos-13
+    runs-on: macos-13, macos-15, Linux
     permissions:
       contents: write
 
@@ -168,4 +168,4 @@ jobs:
           name: v${{ env.YOUTUBE_VERSION }}-${{ env.UYOU_VERSION }}-(${{ github.run_number }})
           files: main/packages/*.ipa
           draft: ${{ env.DRAFT }}
-runs-on: self-hosted
+
