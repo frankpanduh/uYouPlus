@@ -2,7 +2,7 @@
 # https://github.com/ISnackable/CercubePlus/blob/main/.github/workflows/Build.yml
 
 name: Build and Release uYouPlus
-
+runs-on: self-hosted
 on:
   workflow_dispatch:
     inputs:
